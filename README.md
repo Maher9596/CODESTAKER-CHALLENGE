@@ -24,7 +24,7 @@ The user now should be able to selecting one correct answer.
 The user should be able to go to the next question once Next Question is clicked.
 When the user completes answering 12 question the user should be directed to see his final result.
 In case of the 5 minutes timer is up before the completion of 12 question the user should also be directed to see his final result.
-Finally the user should be given an option to restart the quiz and repeat the same process again.
+Finally the user should be given an option to see the right answers or restart the quiz and repeat the same process again.
 
 
 
