@@ -9,7 +9,7 @@ function Quiz() {
     const [selectedAnswer, setSelectedAnswer] = useState("")
     const [sec, setSec] = useState("00")
     const [min, setMin] = useState(5)
-
+    
     const startingMinute = 5
     let time = startingMinute * 60
 
@@ -35,6 +35,8 @@ function Quiz() {
     const nextQuestion = () => {
         if(Questions[question].answer == selectedAnswer) {
             setScore(score + 1)
+    console.log(score);
+
         }
         setQuestion(question + 1)
     }
@@ -42,9 +44,12 @@ function Quiz() {
     const quizEnd = () => {
         if(Questions[question].answer == selectedAnswer) {
             setScore(score + 1)
+    console.log(score);
+
         }
         setGameState("finalResult")
     }
+
     if(min  == 0 && sec == 0) {
         return <FinalResult />
     }

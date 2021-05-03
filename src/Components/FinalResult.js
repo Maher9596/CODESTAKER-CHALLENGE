@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
 import { QuizContext } from '../Contexts/Context'
 import { Questions } from '../Utils/QuestionsBank'
+
 function FinalResult() {
     const { score, setScore, setGameState } = useContext(QuizContext)
-
+    console.log(score);
     const restartQuiz = () => {
         setScore(0)
         setGameState("menu")

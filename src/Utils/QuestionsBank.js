@@ -11,7 +11,7 @@ export const Questions = [
         optionA: "Cristiano Ronaldo",
         optionB: "Ibrahimovic",
         optionC: "Clarence Seedorf",
-        answer: "optionc"
+        answer: "optionC"
     },
     {
         prompt: "Three people have won the Champions League a record three times as manager. Who are they?",
