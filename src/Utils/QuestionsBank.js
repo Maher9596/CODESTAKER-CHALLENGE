@@ -42,7 +42,7 @@ export const Questions = [
         answer: "optionC"
     },
     {
-        prompt: " Who won the UEFA Champions League final in 2004?",
+        prompt: "Who won the UEFA Champions League final in 2004?",
         optionA: "Real Madrid",
         optionB: "FC Porto",
         optionC: "AC Milan",

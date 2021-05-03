@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Menu from './Components/Menu'
 import Quiz from './Components/Quiz'
 import FinalResult from './Components/FinalResult'
+import Answers from './Components/Answers'
 import { QuizContext } from './Contexts/Context'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         {gameState === "menu" && <Menu />}
         {gameState === "quiz" && <Quiz />}
         {gameState === "finalResult" && <FinalResult />}
+        {gameState === "answers" && <Answers />}
       </QuizContext.Provider>
       </div>
   )
