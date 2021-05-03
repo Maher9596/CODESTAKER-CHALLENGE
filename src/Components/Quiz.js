@@ -9,7 +9,7 @@ function Quiz() {
     const [selectedAnswer, setSelectedAnswer] = useState("")
     const [sec, setSec] = useState("00")
     const [min, setMin] = useState(5)
-    
+
     const startingMinute = 5
     let time = startingMinute * 60
 
@@ -22,37 +22,34 @@ function Quiz() {
         time--
     }
 
-
-
     useEffect(() => {
       let interval =  setInterval(countDown, 1000) 
       setTimeout(() => {
           clearInterval(interval)
       }, 301000)       
-    }, [])
+     }, [])
         
     
     const nextQuestion = () => {
         if(Questions[question].answer == selectedAnswer) {
             setScore(score + 1)
-    console.log(score);
-
+            setSelectedAnswer("")
+            console.log(score);
         }
         setQuestion(question + 1)
-    }
+     }
 
     const quizEnd = () => {
         if(Questions[question].answer == selectedAnswer) {
             setScore(score + 1)
-    console.log(score);
-
+            console.log(score);
         }
         setGameState("finalResult")
-    }
+     }
 
     if(min  == 0 && sec == 0) {
         return <FinalResult />
-    }
+     }
         return(
             <div>
                 <p className="text-center text-base">Time left is: {`${min}:${sec}`}</p>
