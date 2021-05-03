@@ -13,6 +13,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 This project was built by React and styled with Tailwind CSS, My goal was to make it user friendly that people from different age range could use it, So I kept the UI as simple as possible.
 
+I started the design process from the smallest (Mobile) then i moved onto bigger screens.
+
 My first step in the development process was to identify the global states and then i set them with the help of useContext hook from React, The app has 3 states I made it in a way that components are getting rendered depending on the global state of the app.
 
 ### User Story
