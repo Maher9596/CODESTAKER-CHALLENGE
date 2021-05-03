@@ -2,7 +2,7 @@
 
 ### Link
 
- quizappchallenge.netlify.app
+http://quizappchallenge.netlify.app
 
 ### `npm start`
 
